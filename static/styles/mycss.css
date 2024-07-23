@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: garamond;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/eee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e8ece7;
+}
+
+
+
+
+/* Основные заголовки */
+h1 {
+    text-align: center;
+    font-size: 35px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+/* Основные стили для абзацев */
+p {
+    font-size: 1em;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Стили для изображений */
+img {
+    width: 70% ;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Стили для секций с контентом */
+.content-section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.text-paragraph,
+.shisha,
+.kitchen,
+.party {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.text-paragraph img,
+.shisha img,
+.kitchen img,
+.party img {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+}
+
+.text-paragraph p,
+.shisha p,
+.kitchen p,
+.party p {
+    width: 70%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 25px;
+
+}
+
+
+/* Стили для блоков "Почему выбирают нас?" */
+.aboutus .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.aboutus .container {
+    flex: 1 1 30%;
+    border: 2px solid #383838;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.aboutus h4 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.aboutus p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    .text-paragraph img,
+    .shisha img,
+    .kitchen img,
+    .party img {
+        width: 100%;
+    }
+    
+    .text-paragraph p,
+    .shisha p,
+    .kitchen p,
+    .party p {
+        font-size: 1.4em; /* Увеличиваем размер шрифта абзацев */
+        width: 90%; /* Увеличиваем ширину текста */
+    }
+
+
+    .aboutus .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutus .container {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .media-links {
+        margin-bottom: 2em;
+    }
+
+    .content>h1 {
+        font-size: 29px;
+        font-weight: bold;
+        padding-left: 5px;
+        margin-top: 1px ;
+    }
+
+    
+}
+
+/* Стили для карты */
+.map-container {
+    position: relative;
+    width: 80%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 20px auto;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Концовка */
+.koncovka p {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+footer {
+    background-color: rgba(33, 37, 41);
+    padding: 0px 0;
+    margin-top: 90px;
+}
+
+
+
+.footer-text {
+    color: aliceblue;
+    margin: auto auto;
+    font-size: 8px;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

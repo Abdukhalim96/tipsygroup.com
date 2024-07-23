@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: garamond;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/eee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e8ece7;
+}
+
+footer {
+    background-color: rgba(33, 37, 41) ;
+    padding: 8px 0;
+    margin-top: 90px;
+}
+
+
+.footer-text {
+    color: aliceblue;
+    margin: auto auto;
+    padding-top: 10px;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel-indicators {
+    bottom: -70px;
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+
+    .media-links {
+        margin-bottom: 2em;
+    }
+    .carousel-inner {
+        margin-left: 10px;
+    }
+}
+
